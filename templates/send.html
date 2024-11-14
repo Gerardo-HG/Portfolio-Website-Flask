@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}Your Message has been send!{% endblock %}
+
+{% block content %}
+    <h1>Hello {{user.name}}</h1>
+    <p>Your message has been sent. In the next few days you will receive feedback. Pay attention to your email please.</p>
+    <a href="{{url_for('home_page')}}">Go home page</a>
+{% include 'footer.html' %}
+{% endblock %}
